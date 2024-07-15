@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Menu Card</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+
+  
+  <script src="​https://aframe.io/releases/0.6.0/aframe.min.js​"> </script>
+  
+  
+  <script src=" https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+  
+  <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  
+  
+  <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+  
+  
+  <link href="./style.css" rel="stylesheet" />
+  
+  <script src="./js/addButtons.js"></script>
+  <script src="./js/markerhandler.js"> </script>
+  <script src="./js/addMarkers.js"> </script>
+</head>
+  const firebaseConfig = {
+    apiKey: "AIzaSyAntvKiKWqegRhkFk5MI_ACwPxCms82Krw",
+    authDomain: "project-170-81530.firebaseapp.com",
+    projectId: "project-170-81530",
+    storageBucket: "project-170-81530.appspot.com",
+    messagingSenderId: "918254965337",
+    appId: "1:918254965337:web:afa2edf2ae0ecb65e39748",
+    measurementId: "G-QY372RMXL3"
+  }; 
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  
+    <!--Button Main Div-->
+    </head><div id="button-div">
+    <a-marker entity and set:
+        id="crane-marker"
+        type="pattern"
+        URL="assets/T01/pattern-crane.patt"
+        cursor="rayOrigin: mouse">
+    </a-marker>
+    
+    </div>
+    <stylesheet
+    button{
+        width:155px;
+    }
+    button-div{
+        display : flex;
+        align-items: center;
+        justify-content:space-around;
+        position : fixed;
+        botton : 10px;
+        width : 100%;
+        z-index:1;
+        boder : 2px soild black;
+    }>
+       
+    </stylesheet>
+</body>
+
+</html>
